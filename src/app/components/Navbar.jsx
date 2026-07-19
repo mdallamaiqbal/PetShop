@@ -4,19 +4,18 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PawPrint, LogIn, LogOut, Menu, X, LayoutDashboard } from "lucide-react";
-// import { signOut } from "../lib/auth-client";
+
 import Image from "next/image";
 import { Button } from "@heroui/react";
 import avatar from "../../../public/assets/avatar.jpeg";
+import { signOut, useSession } from "@/lib/auth-client";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const {data:session, isPending}=useSession()
   const pathname = usePathname();
-
-  
-  const user = null; 
-  const userRole = "user";
-  const isPending = false;
+  const user=session?.user
+  const userRole = user?.role;
 
   const handleSignout = async () => {
     await signOut();
