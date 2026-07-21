@@ -1,6 +1,8 @@
 
 import HeroSection from "./components/HeroSection";
 import HeroSectionPet from "./components/HeroSectionPet";
+import HomeFAQ from "./components/HmoeFaq";
+import WhyChooseUs from "./components/whyChoose";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <HeroSection />
 
       <HeroSectionPet />
+      <WhyChooseUs />
+      <HomeFAQ />
     </div>
   );
 }
