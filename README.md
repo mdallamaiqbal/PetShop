@@ -6,7 +6,7 @@ A modern **full-stack pet marketplace** built with **Next.js, Express.js, MongoD
 
 ## 🌐 Live Demo
 
-* **Live Site:*https://pet-shop-one-phi.vercel.app* 
+* **Live Site:** https://pet-shop-one-phi.vercel.app* 
 * **Frontend Repository:** https://github.com/mdallamaiqbal/PetShop
 * **Backend Repository:** https://github.com/mdallamaiqbal/PetShop-server
 
